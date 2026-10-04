@@ -7,15 +7,12 @@
 
 <body>
 
-    <a href="index.html">Main page</a>
-
     <h1>BioGO Animals Page</h1>
 
     <!-- Loop through each animal in the animals slice and put correct info. -->
     {{range .}}
 
     <div class="animal-Content">
-
         <h2>{{.Name}}</h2>
         <p>Scientific name: {{.ScientificName}}</p>
         <p>Group: {{.AnimalGroup}}</p>
@@ -25,6 +22,7 @@
         <p>Size: {{.Size}}</p>
         <p>Conservation Status: {{.ConservationStatus}}</p>
         <p>Fun Fact: {{.FunFact}}</p>
+
     </div>
 
     <!-- End the loop. -->
