@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Animal</title>
+    <title>BioGO Animals</title>
     <link rel="stylesheet" href="/static/main.css">
 </head>
 
 <body>
 
-    <h1>Animal Page</h1>
+    <h1>BioGO Animals Page</h1>
+
+    <!-- Loop through each animal in the animals slice and apply the correct feature. -->
+    {{range .}}
+
+        <h2>{{.Name}}</h2>
+        <p>Scientific name: {{.ScientificName}}</p>
+        <p>Group: {{.AnimalGroup}}</p>
+        <p>Habitat: {{.Habitat}}</p>
+        <p>Diet: {{.Diet}}</p>
+        <p>Lifespan: {{.Lifespan}}</p>
+        <p>Size: {{.Size}}</p>
+        <p>Conservation Status: {{.ConservationStatus}}</p>
+        <p>Fun Fact: {{.FunFact}}</p>
+
+    <!-- End the loop. -->
+    {{end}}
 
 
 </body>
