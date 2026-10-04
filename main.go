@@ -40,7 +40,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 // animalHandler responds when someone visits /animals.
-fucn animalHandler(w http.ResponseWriter, r *http.Request) {
+func animalHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Send the animal slice from animals.go to the aniaml.html page.
 	err := templates.ExecuteTemplate(w, "animal.html", animals)
