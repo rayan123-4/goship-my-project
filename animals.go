@@ -112,7 +112,7 @@ var animals = []Animal{
     ScientificName: "Crocodylus porosus",
     AnimalGroup: "Reptile",
     Habitat: "Rivers, wetlands, estuaries and coastal waters",
-    Diet: "Carnivore",
+    Diet: "Fish, birds, mammals, reptiles and other animals",
     Lifespan: "About 70 years or more",
     Size: "Up to about 6 metres long",
     ConservationStatus: "Least Concern",
