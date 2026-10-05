@@ -27,7 +27,7 @@ var animals = []Animal{
     Size: "Up to about 3.3 metres long",
     ConservationStatus: "Endangered",
     FunFact: "Every tiger has a unique stripe pattern.",
-    Image: "/static/images/tiger.png",
+    Image: "/static/Images/Tiger.jpg",
 },
 
 // Blue Whale
@@ -41,7 +41,7 @@ var animals = []Animal{
     Size: "Up to about 30 metres long",
     ConservationStatus: "Endangered",
     FunFact: "The blue whale is the largest known animal to have ever lived.",
-    Image: "/static/images/whale.png",
+    Image: "/static/Images/Whale.jpg",
 },
 
 // Honey Bee
@@ -55,7 +55,7 @@ var animals = []Animal{
     Size: "About 1–1.5 centimetres long",
     ConservationStatus: "Not Evaluated",
     FunFact: "Honey bees can communicate the location of food using a waggle dance.",
-    Image: "/static/images/whale.png",
+    Image: "/static/Images/Bee.jpg",
 },
 
 // Bald Eagle
@@ -69,7 +69,7 @@ var animals = []Animal{
     Size: "About 70–100 centimetres long",
     ConservationStatus: "Least Concern",
     FunFact: "Bald eagles have powerful talons for catching prey.",
-    Image: "/static/images/eagle.png",
+    Image: "/static/Images/Eagle.jpg",
 },
 
 // Red-Eyed Tree Frog
@@ -83,7 +83,7 @@ var animals = []Animal{
     Size: "About 4–7 centimetres long",
     ConservationStatus: "Least Concern",
     FunFact: "Its bright red eyes can startle predators.",
-    Image: "/static/images/frog.png",
+    Image: "/static/Images/Frog.png",
 },
 
 // Gopher
@@ -97,7 +97,7 @@ var animals = []Animal{
     Size: "About 19–36 centimetres long",
     ConservationStatus: "Least Concern",
     FunFact: "Gophers spend much of their lives underground in burrow systems.",
-    Image: "/static/images/gopher.png",
+    Image: "/static/Images/Gopher.jpg",
 },
 
 // Great White Shark
@@ -111,7 +111,7 @@ var animals = []Animal{
     Size: "Up to around 6 metres long",
     ConservationStatus: "Vulnerable",
     FunFact: "Great white sharks can detect tiny amounts of chemicals in water.",
-    Image: "/static/images/shark.png",
+    Image: "/static/Images/Shark.jpg",
 },
 
 // Saltwater Crocodile
@@ -125,6 +125,6 @@ var animals = []Animal{
     Size: "Up to about 6 metres long",
     ConservationStatus: "Least Concern",
     FunFact: "Saltwater crocodiles are the largest living reptiles.",
-    Image: "/static/images/croc.png",
+    Image: "/static/Images/Croc.jpg",
 },
 }

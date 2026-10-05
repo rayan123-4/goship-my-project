@@ -7,13 +7,22 @@
 
 <body>
 
-    <h1>BioGO Animals Page</h1>
+    <h1>BioGO Animals</h1>
 
+    <p> Explore the biology of these amazing animals!</p>
+
+     <div class="animal-Grid">
     <!-- Loop through each animal in the animals slice and put correct info. -->
     {{range .}}
 
     <div class="animal-Content">
+
+        <div class="animal-Image">
         <h2>{{.Name}}</h2>
+        <img src="{{.Image}}" alt="{{.Name}}">
+    </div>
+
+        <div class="animal-Text">
         <p>Scientific name: {{.ScientificName}}</p>
         <p>Group: {{.AnimalGroup}}</p>
         <p>Habitat: {{.Habitat}}</p>
@@ -22,11 +31,13 @@
         <p>Size: {{.Size}}</p>
         <p>Conservation Status: {{.ConservationStatus}}</p>
         <p>Fun Fact: {{.FunFact}}</p>
+    </div>
 
     </div>
 
     <!-- End the loop. -->
     {{end}}
+</div>
 
 
 </body>
