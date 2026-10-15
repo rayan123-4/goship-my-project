@@ -7,18 +7,25 @@
 
 <body>
 
-    <h1>BioGO Animals</h1>
+    <div class="Title">
+        <h1 style="font-size: 50px;">BioGO Animals</h1>
 
-    <p> Explore the biology of these amazing animals!</p>
+        <p style="font-size: 20px;"> <b>Explore the biology of these amazing animals!</b></p>
+
+    </div>
+
+    <div class="Images">
+        <img src="/static/Images/go-gopher.png" class="go-Gopher" alt="go mascot image">
+        <img src="/static/Images/go-logo.png" class="go-Logo" alt="go logo image">
+    </div>
 
      <div class="animal-Grid">
     <!-- Loop through each animal in the animals slice and put correct info. -->
     {{range .}}
 
     <div class="animal-Content">
-
         <div class="animal-Image">
-        <h2>{{.Name}}</h2>
+        <h2 class="animal-Title">{{.Name}}</h2>
         <img src="{{.Image}}" alt="{{.Name}}">
     </div>
 

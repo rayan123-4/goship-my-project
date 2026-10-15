@@ -6,10 +6,6 @@ import (
 	"net/http"
 )
 
-// Look in templates and find html files
-// Send html to browser
-var templates = template.Must(template.ParseGlob("templates/*.html"))
-
 
 func main() {
 	// When someone visits / run homeHandler
@@ -28,12 +24,22 @@ func main() {
 // animalHandler responds when someone visits animal.html.
 func animalHandler(w http.ResponseWriter, r *http.Request) {
 
-	// Send the animal slice from animals.go to the animal.html page.
-	err := templates.ExecuteTemplate(w, "animal.html", animals)
+    // Load html templates on page
+    templates, err := template.ParseGlob("templates/*.html")
 
     // Check if there was an error loading the animals.html page.
 	if err != nil {
 		// If error, send error message to browser.
 		http.Error(w, "Could not load animals page", http.StatusInternalServerError)
 	}
+
+	// Send the animal slice from animals.go to the animal.html page.
+	err = templates.ExecuteTemplate(w, "animal.html", animals)
+
+	// Check if there was an error loading the animals.html page.
+	if err != nil {
+		// If error, send error message to browser.
+		http.Error(w, "Could not load animals page", http.StatusInternalServerError)
+	}
+
 }
