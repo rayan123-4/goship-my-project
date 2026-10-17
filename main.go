@@ -23,7 +23,7 @@ func main() {
         http.ServeFile(w, r, "bar.html")
     })
 
-	log.Println("BioGO is running at http://localhost:8080")
+	log.Println("BioGO is running at http://localhost:8081")
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
