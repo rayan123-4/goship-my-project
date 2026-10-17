@@ -13,4 +13,6 @@
 6. Gopher - https://en.wikipedia.org/wiki/Gopher
 7. Shark - https://en.wikipedia.org/wiki/Great_white_shark
 8. Crocodile - https://en.wikipedia.org/wiki/Crocodile
-9. font - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font
+9. Font - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font
+10. Graph Data - https://a-z-animals.com/
+11. Graph Learning Resource - https://github.com/go-echarts/go-echarts
