@@ -24,7 +24,7 @@ func main() {
     })
 
 	log.Println("BioGO is running at http://localhost:8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
 // animalHandler responds when someone visits animal.html.
