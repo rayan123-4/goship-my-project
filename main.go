@@ -17,6 +17,12 @@ func main() {
 
 	))
 
+	createBarChart()
+
+        http.HandleFunc("/bar.html", func(w http.ResponseWriter, r *http.Request) {
+        http.ServeFile(w, r, "bar.html")
+    })
+
 	log.Println("BioGO is running at http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
